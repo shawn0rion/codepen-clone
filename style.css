@@ -1,0 +1,76 @@
+:root{
+    --editor-offset-top: 40px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+.editors{
+    display: flex;
+    margin-top: var(--editor-offset-top);
+}
+
+
+.editor-box{
+    padding: 0;
+    position: relative;
+}
+
+.editor-box img{
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+    width: 45px;
+    height: 60px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+
+.editor{
+    font-family: 'Source Code Pro', monospace;
+    width: calc(100vw / 3);
+    border: 1px solid #fff;
+}
+
+#run {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    position: fixed;
+    top:0;
+    width: 100%;
+    cursor: pointer;
+    z-index: 2;
+    background-color: #6e57d2;
+    border: 1px solid #5e3eec;
+    border-bottom: 1px solid #3910f1;
+    margin-bottom: 2px;
+    padding: 5px;
+    height: var(--editor-offset-top);
+    color:#fff;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    transition: all .3s ease;
+}
+
+#run:focus,
+#run:hover{
+    background-color:#5e3eec ;
+}
+
+.output-container{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+}

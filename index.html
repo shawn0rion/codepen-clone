@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.62.0/lib/codemirror.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.62.0/theme/dracula.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="run">run</button>
+    <div class="editors">
+        <div class="editor-box">
+            <img src="https://cdn.icon-icons.com/icons2/2790/PNG/512/html_filetype_icon_177535.png" alt="">
+            <div class="editor" id="html"></div>
+        </div>
+        <div class="editor-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/136/136527.png" alt="">
+            <div class="editor" id="css"></div>
+        </div>
+        <div class="editor-box">
+            <img src="https://cdn-icons-png.flaticon.com/256/136/136530.png" alt="">
+            <div class="editor" id="js"></div>
+        </div>
+    </div>
+    <div class="output-container">
+        <iframe src="" frameborder="0"></iframe>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.62.0/lib/codemirror.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.62.0/mode/javascript/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.62.0/mode/css/css.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.62.0/mode/xml/xml.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/codemirror@5.62.0/mode/html/html.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.62.0/mode/htmlmixed/htmlmixed.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
